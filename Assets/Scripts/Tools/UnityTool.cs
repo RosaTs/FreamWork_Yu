@@ -42,9 +42,7 @@ public class UnityTool : MonoBehaviour {
         }
         return obj;
     }
-
-
-
+    
     /// <summary>
     /// 读取json返回string类型的内容
     /// </summary>
@@ -98,8 +96,7 @@ public class UnityTool : MonoBehaviour {
             m_streamWriter.Close();
         }
     }
-
-
+    
     /// <summary>
     /// 解析所有类型的文本文件 包括json txt csv 等
     /// </summary>
@@ -108,6 +105,7 @@ public class UnityTool : MonoBehaviour {
     /// <returns></returns>
     public static string ReadTextFileToString(string jsonFileName,string lastname)
     {
+
 
         if (!Directory.Exists("TextFile"))
         {
@@ -137,7 +135,7 @@ public class UnityTool : MonoBehaviour {
     {
         string path = "TextFile/" + FileName + lastname;
         if (!Directory.Exists("TextFile"))
-        {
+         {
             Directory.CreateDirectory("TextFile");  //创建文件夹
         }
 
@@ -158,7 +156,12 @@ public class UnityTool : MonoBehaviour {
             m_streamWriter.Close();
         }
     }
-
+    /// <summary>
+    /// 将数据写入文本文件
+    /// </summary>
+    /// <param name="jsonFileName"></param>
+    /// <param name="lastname"></param>
+    /// <param name="data"></param>
     public static void WriteTextToFile(string jsonFileName, string lastname,string data)
     {
         string path = "TextFile/" + jsonFileName + lastname;
