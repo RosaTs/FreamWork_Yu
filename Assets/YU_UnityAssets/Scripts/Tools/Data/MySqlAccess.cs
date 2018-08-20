@@ -35,7 +35,7 @@ public class MySqlAccess
         try
         {
             //string.Format是将指定的 String类型的数据中的每个格式项替换为相应对象的值的文本等效项。  
-            string mySqlString = string.Format("Database={0};Data Source={1};User Id={2};Password={3};", dataBase, host, id, pwd, "3306");
+            string mySqlString = string.Format("database={0};datasource={1};userid={2};password={3};", dataBase, host, id, pwd, "3306");
             Debug.Log(mySqlString);
             mySqlConnection = new MySqlConnection(mySqlString);
             mySqlConnection.Open();
