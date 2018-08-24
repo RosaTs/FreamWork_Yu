@@ -6,7 +6,7 @@ public class CombineMesh : MonoBehaviour
 {
 
     //菜单按钮静态触发
-    [MenuItem("MeshCombine/CombineChildren")]
+    [MenuItem("Tools/MeshCombin")]
     static void CreatMeshCombine()
     {
         //获取到当前点击的游戏物体
