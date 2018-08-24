@@ -30,17 +30,16 @@ public class LondingSlider : MonoBehaviour
     }
     IEnumerator AsyncLoading()
     {
-        operation = SceneManager.LoadSceneAsync(Globe.nextSceneName);
+        operation = SceneManager.LoadSceneAsync(1);
         //阻止当加载完成自动切换
         operation.allowSceneActivation = false;
         yield return operation;
-
     }
+
     // Update is called once per frame
     void Update()
     {
         targetValue = operation.progress;
-
         if (operation.progress >= 0.9f)
         {
             //operation.progress的值最大为0.9

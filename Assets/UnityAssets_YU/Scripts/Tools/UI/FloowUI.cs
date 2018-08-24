@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 /// <summary>
 /// 追踪3d游戏物体 可以由物体远近缩放物体大小 挂在3d物体身上
